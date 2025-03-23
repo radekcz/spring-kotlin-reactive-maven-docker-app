@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>core</artifactId>
+    <artifactId>spring-kotlin-reactive-maven-docker-app-core</artifactId>
 
     <properties>
         <maven.compiler.source>${java.version}</maven.compiler.source>
