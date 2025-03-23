@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SpringKotlinMavenDockerAppApplication
+class SpringKotlinReactiveMavenDockerAppApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringKotlinMavenDockerAppApplication>(*args)
+	runApplication<SpringKotlinReactiveMavenDockerAppApplication>(*args)
 }
