@@ -1,8 +1,10 @@
 package com.rk.springkotlinreactivemavendockerapp.rest
 
+import com.rk.springkotlinreactivemavendockerapp.configuration.TestSecurityConfiguration
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest
+import org.springframework.context.annotation.Import
 import org.springframework.test.context.bean.override.mockito.MockitoBean
 import org.springframework.test.web.reactive.server.WebTestClient
 import reactor.core.publisher.Mono
@@ -12,6 +14,7 @@ import static org.mockito.Mockito.when
 
 @WebFluxTest(controllers = BaseController)
 @AutoConfigureWebTestClient
+@Import([TestSecurityConfiguration])
 class BaseControllerMockitoBeanSpec extends Specification {
 
     @Autowired
