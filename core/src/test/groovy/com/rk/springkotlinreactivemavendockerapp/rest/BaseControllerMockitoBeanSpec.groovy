@@ -22,7 +22,8 @@ class BaseControllerMockitoBeanSpec extends Specification {
 
     def "ping endpoint should return the result"() {
         given:
-        when(baseService.handlePing()).thenReturn(Mono.just("Hello from BaseService"))
+        when(baseService.handlePing())
+                .thenReturn(Mono.just("Hello from BaseService"))
 
         when:
         def result = webTestClient
