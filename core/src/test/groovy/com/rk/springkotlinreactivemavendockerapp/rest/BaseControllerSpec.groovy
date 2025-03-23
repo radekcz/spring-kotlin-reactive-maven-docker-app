@@ -22,7 +22,8 @@ class BaseControllerSpec extends Specification {
 
     def "ping endpoint should return the result"() {
         given:
-        when(baseService.handlePing()).thenReturn(Mono.just("Hello from BaseService"))
+        when(baseService.handlePing())
+                .thenReturn(Mono.just("Ping message from BaseService"))
 
         when:
         def result = webTestClient
@@ -37,6 +38,6 @@ class BaseControllerSpec extends Specification {
         result.expectStatus()
                 .isOk()
                 .expectBody(String.class)
-                .isEqualTo("Hello from BaseService")
+                .isEqualTo("Ping message from BaseService")
     }
 }
