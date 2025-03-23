@@ -1,4 +1,4 @@
-package com.rk.springkotlinmavendockerapp.rest
+package com.rk.springkotlinreactivemavendockerapp.rest
 
 import org.springframework.stereotype.Service
 

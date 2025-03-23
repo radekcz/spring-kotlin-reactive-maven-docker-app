@@ -1,4 +1,4 @@
-package com.rk.springkotlinmavendockerapp
+package com.rk.springkotlinreactivemavendockerapp
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
