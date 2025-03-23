@@ -8,7 +8,7 @@ import spock.lang.Specification
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class SpringKotlinMavenDockerAppSpec extends Specification {
+class SpringKotlinReactiveMavenDockerAppSpec extends Specification {
 
     @Autowired
     private WebTestClient webTestClient
