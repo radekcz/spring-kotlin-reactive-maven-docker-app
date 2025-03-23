@@ -1,0 +1,14 @@
+app:
+  version: 1.0.0-SNAPSHOT
+  authentication:
+    token: dummy-token
+
+spring:
+  application:
+    name: spring-kotlin-reactive-maven-docker-app
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, loggers
