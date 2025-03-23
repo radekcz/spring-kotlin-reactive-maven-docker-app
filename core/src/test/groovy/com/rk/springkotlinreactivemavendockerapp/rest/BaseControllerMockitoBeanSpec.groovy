@@ -23,7 +23,7 @@ class BaseControllerMockitoBeanSpec extends Specification {
     def "ping endpoint should return the result"() {
         given:
         when(baseService.handlePing())
-                .thenReturn(Mono.just("Hello from BaseService"))
+                .thenReturn(Mono.just("Test message from BaseService"))
 
         when:
         def result = webTestClient
@@ -38,6 +38,6 @@ class BaseControllerMockitoBeanSpec extends Specification {
         result.expectStatus()
                 .isOk()
                 .expectBody(String.class)
-                .isEqualTo("Hello from BaseService")
+                .isEqualTo("Test message from BaseService")
     }
 }
