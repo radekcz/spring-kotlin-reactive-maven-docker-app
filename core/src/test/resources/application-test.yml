@@ -1,0 +1,13 @@
+server:
+  ssl:
+    enabled: false
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    function:
+      definition:
+
+app:
+  authentication:
+    token: testing-auth
