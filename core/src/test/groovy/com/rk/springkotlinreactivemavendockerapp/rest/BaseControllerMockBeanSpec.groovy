@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when
 @WebFluxTest(controllers = BaseController)
 @AutoConfigureWebTestClient
 @Import([TestSecurityConfiguration])
-class BaseControllerSpec extends Specification {
+class BaseControllerMockBeanSpec extends Specification {
 
     @Autowired
     private WebTestClient webTestClient
